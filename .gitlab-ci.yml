@@ -1,0 +1,7 @@
+include:
+  - project: 'docker/builder'
+    file: '/templates/.gitlab-ci.yml'
+
+variables:
+  ARG_SIGNALWIRE_ACCESS_TOKEN: $SIGNALWIRE_ACCESS_TOKEN
+  BUILD_IMAGE_SCRIPT: .gitlab-ci/build-image.sh
